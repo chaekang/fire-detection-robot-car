@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Codex" type="device">
+  <diagram id="bbisong-architecture" name="삐송삐송 시스템 아키텍처">
+    <mxGraphModel dx="1440" dy="1110" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="1110" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="label-1" value="삐송삐송  |  시스템 아키텍처" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=34;fontColor=#0F172A;fontStyle=1;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="50" y="27.799999999999997" width="1300" height="54.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="label-2" value="센서 입력과 주행 제어는 Raspberry Pi에서, 영상 판정은 별도 PC에서 수행합니다." style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=19;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="50" y="87.8" width="1320" height="30.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="" style="rounded=1;arcSize=6.0;whiteSpace=wrap;html=0;fillColor=#F8FAFC;strokeColor=#CBD5E1;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="370" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="pi" value="" style="rounded=1;arcSize=6.0;whiteSpace=wrap;html=0;fillColor=#EFF6FF;strokeColor=#93C5FD;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="520" y="150" width="430" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="output" value="" style="rounded=1;arcSize=6.0;whiteSpace=wrap;html=0;fillColor=#F0FDFA;strokeColor=#99F6E4;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="150" width="370" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="label-3" value="01   센서 입력" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=23;fontColor=#334155;fontStyle=1;spacing=0;" vertex="1" parent="input" connectable="0">
+          <mxGeometry x="30" y="21.599999999999994" width="300" height="36.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="label-4" value="02   Raspberry Pi" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=23;fontColor=#1E40AF;fontStyle=1;spacing=0;" vertex="1" parent="pi" connectable="0">
+          <mxGeometry x="30" y="21.599999999999994" width="360" height="36.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="label-5" value="03   장치 출력" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=23;fontColor=#115E59;fontStyle=1;spacing=0;" vertex="1" parent="output" connectable="0">
+          <mxGeometry x="30" y="21.599999999999994" width="300" height="36.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="line" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="input">
+          <mxGeometry x="30" y="75" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-6" value="라인 IR 센서 × 4" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#0F172A;fontStyle=1;spacing=0;" vertex="1" parent="line" connectable="0">
+          <mxGeometry x="5.0" y="9.199999999999989" width="300" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-7" value="검은 선 감지 조합" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="line" connectable="0">
+          <mxGeometry x="5.0" y="39.39999999999998" width="300" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-8" value="GPIO" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="line" connectable="0">
+          <mxGeometry x="5.0" y="64.80000000000001" width="300" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="ultrasonic" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="input">
+          <mxGeometry x="30" y="195" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-9" value="초음파 거리 센서" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#0F172A;fontStyle=1;spacing=0;" vertex="1" parent="ultrasonic" connectable="0">
+          <mxGeometry x="5.0" y="9.199999999999989" width="300" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-10" value="전방 장애물 거리" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="ultrasonic" connectable="0">
+          <mxGeometry x="5.0" y="39.39999999999998" width="300" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-11" value="GPIO · TRIG / ECHO" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="ultrasonic" connectable="0">
+          <mxGeometry x="5.0" y="64.80000000000001" width="300" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="side-ir" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="input">
+          <mxGeometry x="30" y="315" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-12" value="좌우 장애물 IR" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#0F172A;fontStyle=1;spacing=0;" vertex="1" parent="side-ir" connectable="0">
+          <mxGeometry x="5.0" y="9.199999999999989" width="300" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-13" value="회피 방향 결정에 사용" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="side-ir" connectable="0">
+          <mxGeometry x="5.0" y="39.39999999999998" width="300" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-14" value="GPIO" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="side-ir" connectable="0">
+          <mxGeometry x="5.0" y="64.79999999999995" width="300" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="imu" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="input">
+          <mxGeometry x="30" y="435" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-15" value="MPU6050 IMU" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#0F172A;fontStyle=1;spacing=0;" vertex="1" parent="imu" connectable="0">
+          <mxGeometry x="5.0" y="9.200000000000045" width="300" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-16" value="자이로 Z축 → yaw 추정" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="imu" connectable="0">
+          <mxGeometry x="5.0" y="39.39999999999998" width="300" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-17" value="I2C" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="imu" connectable="0">
+          <mxGeometry x="5.0" y="64.79999999999995" width="300" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="camera" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="input">
+          <mxGeometry x="30" y="555" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-18" value="Raspberry Pi 카메라" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#0F172A;fontStyle=1;spacing=0;" vertex="1" parent="camera" connectable="0">
+          <mxGeometry x="5.0" y="9.200000000000045" width="300" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-19" value="RGB 프레임 640 × 480" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="camera" connectable="0">
+          <mxGeometry x="5.0" y="39.39999999999998" width="300" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-20" value="Picamera2" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="camera" connectable="0">
+          <mxGeometry x="5.0" y="64.79999999999995" width="300" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="control" value="" style="rounded=1;arcSize=6.0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#60A5FA;strokeWidth=2;fontFamily=Malgun Gothic;" vertex="1" parent="pi">
+          <mxGeometry x="30" y="90" width="370" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="label-21" value="주행 · 상태 제어" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=25;fontColor=#1E3A8A;fontStyle=1;spacing=0;" vertex="1" parent="control" connectable="0">
+          <mxGeometry x="10.0" y="15.0" width="350" height="40.0" as="geometry" />
+        </mxCell>
+        <mxCell id="label-22" value="src/main.py" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=16;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="control" connectable="0">
+          <mxGeometry x="10.0" y="54.19999999999999" width="350" height="25.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-23" value="거리 확인 및 라인 추종" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="control" connectable="0">
+          <mxGeometry x="10.0" y="100.19999999999999" width="350" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-24" value="장애물 분류와 회피" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="control" connectable="0">
+          <mxGeometry x="10.0" y="147.2" width="350" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-25" value="화재 감지 시 정지 · 대기" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="control" connectable="0">
+          <mxGeometry x="10.0" y="194.2" width="350" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-26" value="OLED · LED · 버저 상태 표시" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=19;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="control" connectable="0">
+          <mxGeometry x="10.0" y="242.8" width="350" height="30.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="client" value="" style="rounded=1;arcSize=16.0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#60A5FA;strokeWidth=2;fontFamily=Malgun Gothic;" vertex="1" parent="pi">
+          <mxGeometry x="30" y="530" width="370" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="label-27" value="영상 전송 클라이언트" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=23;fontColor=#1E3A8A;fontStyle=1;spacing=0;" vertex="1" parent="client" connectable="0">
+          <mxGeometry x="10.0" y="8.600000000000023" width="350" height="36.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="label-28" value="Picamera2 → JPEG → TCP" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="client" connectable="0">
+          <mxGeometry x="10.0" y="42.60000000000002" width="350" height="28.8" as="geometry" />
+        </mxCell>
+        <mxCell id="label-29" value="src/fire_detection.py" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=15;fontColor=#64748B;fontStyle=0;spacing=0;" vertex="1" parent="client" connectable="0">
+          <mxGeometry x="10.0" y="71.0" width="350" height="24.0" as="geometry" />
+        </mxCell>
+        <mxCell id="board" value="" style="rounded=1;arcSize=12.0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#5EEAD4;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="output">
+          <mxGeometry x="30" y="75" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="label-30" value="STM8 제어 보드" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=22;fontColor=#134E4A;fontStyle=1;spacing=0;" vertex="1" parent="board" connectable="0">
+          <mxGeometry x="7.5" y="15.400000000000006" width="295" height="35.2" as="geometry" />
+        </mxCell>
+        <mxCell id="label-31" value="I2C 명령 수신" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="board" connectable="0">
+          <mxGeometry x="7.5" y="53.60000000000002" width="295" height="28.8" as="geometry" />
+        </mxCell>
+        <mxCell id="drive" value="" style="rounded=1;arcSize=12.6;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#5EEAD4;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="output">
+          <mxGeometry x="30" y="240" width="310" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="label-32" value="DC 모터 · 카메라 서보" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=21;fontColor=#134E4A;fontStyle=1;spacing=0;" vertex="1" parent="drive" connectable="0">
+          <mxGeometry x="7.5" y="14.199999999999989" width="295" height="33.6" as="geometry" />
+        </mxCell>
+        <mxCell id="label-33" value="주행 / 카메라 방향" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="drive" connectable="0">
+          <mxGeometry x="7.5" y="50.60000000000002" width="295" height="28.8" as="geometry" />
+        </mxCell>
+        <mxCell id="oled" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#5EEAD4;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="output">
+          <mxGeometry x="30" y="385" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-34" value="SSD1306 OLED" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=22;fontColor=#134E4A;fontStyle=1;spacing=0;" vertex="1" parent="oled" connectable="0">
+          <mxGeometry x="7.5" y="11.399999999999977" width="295" height="35.2" as="geometry" />
+        </mxCell>
+        <mxCell id="label-35" value="표정과 상태 표시" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="oled" connectable="0">
+          <mxGeometry x="7.5" y="49.60000000000002" width="295" height="28.8" as="geometry" />
+        </mxCell>
+        <mxCell id="signal" value="" style="rounded=1;arcSize=13.3;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#5EEAD4;strokeWidth=1.5;fontFamily=Malgun Gothic;" vertex="1" parent="output">
+          <mxGeometry x="30" y="525" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="label-36" value="LED · 버저" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=22;fontColor=#134E4A;fontStyle=1;spacing=0;" vertex="1" parent="signal" connectable="0">
+          <mxGeometry x="7.5" y="11.399999999999977" width="295" height="35.2" as="geometry" />
+        </mxCell>
+        <mxCell id="label-37" value="점멸과 음향 알림" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=18;fontColor=#334155;fontStyle=0;spacing=0;" vertex="1" parent="signal" connectable="0">
+          <mxGeometry x="7.5" y="49.60000000000002" width="295" height="28.8" as="geometry" />
+        </mxCell>
+        <mxCell id="pc" value="" style="rounded=1;arcSize=11.9;whiteSpace=wrap;html=0;fillColor=#F5F3FF;strokeColor=#C4B5FD;strokeWidth=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="520" y="930" width="430" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="label-38" value="04   별도 PC" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=20;fontColor=#6D28D9;fontStyle=1;spacing=0;" vertex="1" parent="pc" connectable="0">
+          <mxGeometry x="30" y="13.0" width="360" height="32.0" as="geometry" />
+        </mxCell>
+        <mxCell id="label-39" value="YOLOv8 화재 판정 서버" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=24;fontColor=#4C1D95;fontStyle=1;spacing=0;" vertex="1" parent="pc" connectable="0">
+          <mxGeometry x="15.0" y="46.799999999999955" width="400" height="38.400000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="label-40" value="서버 소스와 모델은 저장소에 미포함" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#6D28D9;fontStyle=0;spacing=0;" vertex="1" parent="pc" connectable="0">
+          <mxGeometry x="15.0" y="91.39999999999998" width="400" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="line-input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#64748B;strokeWidth=2;exitX=1.000000;exitY=0.500000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.150000;entryDx=0;entryDy=0;" edge="1" source="line" target="control" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="270" />
+              <mxPoint x="450" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="distance-input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#64748B;strokeWidth=2;exitX=1.000000;exitY=0.500000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.350000;entryDx=0;entryDy=0;" edge="1" source="ultrasonic" target="control" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="390" />
+              <mxPoint x="470" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="side-input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#64748B;strokeWidth=2;exitX=1.000000;exitY=0.500000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.550000;entryDx=0;entryDy=0;" edge="1" source="side-ir" target="control" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="510" />
+              <mxPoint x="490" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="imu-input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#64748B;strokeWidth=2;exitX=1.000000;exitY=0.500000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.750000;entryDx=0;entryDy=0;" edge="1" source="imu" target="control" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="630" />
+              <mxPoint x="510" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="camera-input" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#2563EB;strokeWidth=2;exitX=1.000000;exitY=0.500000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.700000;entryDx=0;entryDy=0;" edge="1" source="camera" target="client" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ask" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#2563EB;strokeWidth=2;exitX=0.216216;exitY=1.000000;exitDx=0;exitDy=0;entryX=0.216216;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" source="control" target="client" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="answer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#16A34A;strokeWidth=2;exitX=0.770270;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.770270;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" source="client" target="control" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label-41" value="판정 요청" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#2563EB;fontStyle=1;spacing=0;" vertex="1" parent="pi" connectable="0">
+          <mxGeometry x="10.0" y="434.4" width="130" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-42" value="감지 여부" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#15803D;fontStyle=1;spacing=0;" vertex="1" parent="pi" connectable="0">
+          <mxGeometry x="280.0" y="468.4" width="130" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="motor-i2c" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#0F766E;strokeWidth=2;exitX=1.000000;exitY=0.150000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.600000;entryDx=0;entryDy=0;" edge="1" source="control" target="board" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label-43" value="I2C" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=15;fontColor=#0F766E;fontStyle=1;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="944.0" y="258.0" width="80" height="24.0" as="geometry" />
+        </mxCell>
+        <mxCell id="motor-output" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#0F766E;strokeWidth=2;exitX=0.500000;exitY=1.000000;exitDx=0;exitDy=0;entryX=0.500000;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" source="board" target="drive" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label-44" value="구동 명령" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=15;fontColor=#0F766E;fontStyle=0;spacing=0;" vertex="1" parent="output" connectable="0">
+          <mxGeometry x="188.0" y="196.0" width="110" height="24.0" as="geometry" />
+        </mxCell>
+        <mxCell id="oled-i2c" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#0F766E;strokeWidth=2;exitX=1.000000;exitY=0.533333;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.500000;entryDx=0;entryDy=0;" edge="1" source="control" target="oled" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="400" />
+              <mxPoint x="990" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label-45" value="I2C" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#0F766E;fontStyle=1;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="983.0" y="551.8" width="70" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="gpio-output" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#0F766E;strokeWidth=2;exitX=1.000000;exitY=0.750000;exitDx=0;exitDy=0;entryX=0.000000;entryY=0.500000;entryDx=0;entryDy=0;" edge="1" source="control" target="signal" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="465" />
+              <mxPoint x="970" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label-46" value="GPIO / PWM" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=14;fontColor=#0F766E;fontStyle=1;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="937.5" y="688.8" width="115" height="22.400000000000002" as="geometry" />
+        </mxCell>
+        <mxCell id="frame-request" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#2563EB;strokeWidth=2.5;exitX=0.229730;exitY=1.000000;exitDx=0;exitDy=0;entryX=0.267442;entryY=0.000000;entryDx=0;entryDy=0;" edge="1" source="client" target="pc" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="result-response" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;endFill=1;startArrow=none;strokeColor=#16A34A;strokeWidth=2.5;exitX=0.732558;exitY=0.000000;exitDx=0;exitDy=0;entryX=0.770270;entryY=1.000000;entryDx=0;entryDy=0;" edge="1" source="pc" target="client" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="label-47" value="TCP · JPEG 프레임" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#2563EB;fontStyle=1;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="520.0" y="862.4" width="200" height="27.200000000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="label-48" value="TCP · 판정 결과 &quot;1&quot; / &quot;0&quot;" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=none;fillColor=none;fontFamily=Malgun Gothic;fontSize=17;fontColor=#15803D;fontStyle=1;spacing=0;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="741.0" y="833.4" width="250" height="27.200000000000003" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
