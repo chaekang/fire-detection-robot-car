@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Robot-car publication: local settings, archives and unverified model assets
+.env.*
+!.env.example
+code.zip
+*.pt
+*.onnx
+Thumbs.db
+Desktop.ini
