@@ -147,8 +147,6 @@ Raspberry Pi에서 정지·대기 또는 회피 결정
 
 [![삐송삐송 시스템 아키텍처](assets/diagrams/architecture.png)](assets/diagrams/architecture.png)
 
-[draw.io 편집 원본](docs/diagrams/architecture.drawio) · [SVG로 보기](assets/diagrams/architecture.svg)
-
 왼쪽은 센서 입력, 가운데는 라즈베리파이의 주행 제어, 오른쪽은 장치 출력입니다. 아래의 PC 서버는 카메라 프레임을 받아 화재 여부를 판정합니다. 파란 화살표는 영상 전송과 판정 요청, 초록 화살표는 응답을 나타냅니다.
 
 라즈베리파이가 센서와 액추에이터를 다루고 PC가 영상 판정을 수행하는 구성입니다. **PC 서버 소스와 모델 파일은 현재 저장소에 포함되어 있지 않습니다.**
