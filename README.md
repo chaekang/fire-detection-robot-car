@@ -42,10 +42,10 @@
 
 **🎬 삐송삐송 실제 동작 영상**
 
-_시연 영상 업로드 예정_
-
 <!-- DEMO_VIDEO_START -->
-<!-- assets/videos/에 시연 영상을 넣거나 GitHub에 업로드한 뒤, 이 위치에 영상 URL을 넣으세요. -->
+[![삐송삐송 시연 영상 — 클릭하여 재생](https://i.ytimg.com/vi/T6kLo_2CNzM/hqdefault.jpg)](https://www.youtube.com/watch?v=T6kLo_2CNzM)
+
+[▶ YouTube에서 시연 영상 재생](https://www.youtube.com/watch?v=T6kLo_2CNzM)
 <!-- DEMO_VIDEO_END -->
 
 </div>
